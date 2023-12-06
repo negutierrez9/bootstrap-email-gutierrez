@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="container-fluid my-container">
+
         <div class="row search-bar-and-compose">
             <div class="col compose-button">
                 <button class="my-4 ms-4 d-flex align-items-center menu-options">Compose</button>
@@ -19,6 +20,7 @@
                 <input type="text" class="my-4 d-flex " placeholder="Search">
             </div>
         </div>
+
         <div class="row email-content">
             <div class="col-2 email-sidebar">
                 <button class="my-4 ms-4 d-flex align-items-center menu-options">Inbox</button>
@@ -27,9 +29,24 @@
                 <button class="my-4 ms-4 d-flex align-items-center menu-options">Drafts</button>
                 <button class="my-4 ms-4 d-flex align-items-center menu-options">Trash</button>
             </div>
-            <div class="col-3 inbox">Inbox</div>
+
+            <div class="col-3 inbox">
+                Inbox - in progress
+                <div class="inbox-list">
+                    <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"></label></div>
+                    <div class="text-muted date">Dec 3</div>
+                    <div class="email-content">
+                        <p class="sender-name">Mr. Howl</p>
+                        <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-7 current-email-content">
                 <div class="row email-header">
+                    <div class="col-2 profile-pic">
+                        <img src="totoro.jpeg" class="rounded-circle profile-pic" alt="totoro profile picture" width="100" height="100">
+                    </div>
                     <div class="col email-header">
                         <div id="email-title">Email Title</div>
                         <h6>From: John Doe &lt;johndoe@gmail.com&gt; </h6>

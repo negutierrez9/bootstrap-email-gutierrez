@@ -23,22 +23,79 @@
 
         <div class="row email-content">
             <div class="col-2 email-sidebar">
-                <button class="my-4 ms-4 d-flex align-items-center menu-options">Inbox</button>
-                <button class="my-4 ms-4 d-flex align-items-center menu-options">Starred</button>
-                <button class="my-4 ms-4 d-flex align-items-center menu-options">Sent</button>
-                <button class="my-4 ms-4 d-flex align-items-center menu-options">Drafts</button>
-                <button class="my-4 ms-4 d-flex align-items-center menu-options">Trash</button>
+                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Inbox</button>
+                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Starred</button>
+                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Sent</button>
+                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Drafts</button>
+                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Trash</button>
             </div>
 
             <div class="col-3 inbox">
-                Inbox - in progress
-                <div class="inbox-list">
+                <!-- Inbox - in progress -->
+                <!-- <div class="inbox-list">
                     <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"></label></div>
                     <div class="text-muted date">Dec 3</div>
                     <div class="email-content">
                         <p class="sender-name">Mr. Howl</p>
                         <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
+                </div> -->
+
+                <div class="card inbox-list" style="width: 18rem">
+                    <div class="card-header featured-email">
+                        <div class="form-check"> 
+                            <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>
+                                <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                    <p class="sender-name">
+                                        <strong>Totoro</strong> 
+                                    </p>
+                                    <span class="text-muted date ms-auto">Dec 3</span>
+                                </div>
+                                <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-check"> 
+                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                    <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                        <p class="sender-name">Ponyo</p>
+                                        <span class="text-muted date ms-auto">Dec 1</span>
+                                    </div>
+                                    <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check"> 
+                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                    <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                        <p class="sender-name">Miss Kiki</p>
+                                        <span class="text-muted date ms-auto">Nov 30</span>
+                                    </div>
+                                    <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check"> 
+                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                    <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                        <p class="sender-name">Studio Ghibli</p>
+                                        <span class="text-muted date ms-auto">Nov 30</span>
+                                    </div>
+                                    <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check"> 
+                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                    <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                        <p class="sender-name">Mr. No Face</p>
+                                        <span class="text-muted date ms-auto">Nov 24</span>
+                                    </div>
+                                    <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -49,19 +106,21 @@
                     </div>
                     <div class="col email-header">
                         <div id="email-title">Email Title</div>
-                        <h6>From: John Doe &lt;johndoe@gmail.com&gt; </h6>
+                        <h6>From: Totoro &lt;totoroandfriends@gmail.com&gt; </h6>
                         <p class="text-muted">to: Me</p>
                     </div>
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sed aspernatur facere laboriosam cum illum incidunt. Reprehenderit, qui. 
                 Fuga obcaecati animi voluptas ex distinctio atque quae temporibus autem, aut, veritatis nam.</p>
-                <div class="row justify-content-evenly">
-                    <div class="col">
+                
+                <div class="row mt-auto d-flex justify-content-end current-email-actions">
+                    <div class="col reply-forward">
                         <button class="reply-button">Reply</button>
                         <button class="forward-button">Forward</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

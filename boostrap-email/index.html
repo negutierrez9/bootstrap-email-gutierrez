@@ -13,51 +13,41 @@
     <div class="container-fluid my-container">
 
         <div class="row search-bar-and-compose">
-            <div class="col">
-                <button class="btn btn-light my-4 ms-4 d-flex align-items-center" id="compose-button">Compose</button>
+            <div class="col-sm-2 col-md-2 col-lg-2 d-none d-lg-block">
+                <button class="btn btn-light my-4 ms-4" id="compose-button">Compose</button>
             </div>
-            <div class="col-md-10 ms-auto search-bar">
-                <input type="text" class="my-4 d-flex " placeholder="Search">
+            <div class="col-sm-10 col-md-10 col-lg-9 search-bar">
+                <input type="text" class="my-4 w-100" placeholder="Search">
             </div>
         </div>
 
         <div class="row email-content">
-            <div class="col-2 email-sidebar">
-                <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Inbox</button>
+            <div class="col-lg-2 d-none d-lg-block email-sidebar">
+                <div class="inbox-sidebar">
+                    <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Inbox</button>
+                </div>
                 <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Starred</button>
                 <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Sent</button>
                 <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Drafts</button>
                 <button class="btn btn-link my-4 ms-4 d-flex align-items-center menu-options">Trash</button>
             </div>
 
-            <div class="col-3 inbox">
-                <!-- Inbox - in progress -->
-                <!-- <div class="inbox-list">
-                    <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"></label></div>
-                    <div class="text-muted date">Dec 3</div>
-                    <div class="email-content">
-                        <p class="sender-name">Mr. Howl</p>
-                        <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div> -->
-
-                <div class="card inbox-list" style="width: 18rem">
-                    <div class="card-header featured-email">
-                        <div class="form-check"> 
-                            <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>
-                                <div class="email-content ms-auto d-flex justify-content-evenly w-90">
-                                    <p class="sender-name">
-                                        <strong>Totoro</strong> 
-                                    </p>
-                                    <span class="text-muted date ms-auto">Dec 3</span>
-                                </div>
-                                <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-5 inbox">
+                <div class="card inbox-list">
                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item selected-email">
+                            <div class="form-check"> 
+                                <input type="checkbox" class="form-check-input">  
+                                    <div class="email-content ms-auto d-flex justify-content-evenly w-90">
+                                        <p class="sender-name"><strong>Totoro</strong></p>
+                                        <span class="text-muted date ms-auto">Dec 1</span>
+                                    </div>
+                                    <p class="email-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </li>
                         <li class="list-group-item">
                             <div class="form-check"> 
-                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                <input type="checkbox" class="form-check-input">  
                                     <div class="email-content ms-auto d-flex justify-content-evenly w-90">
                                         <p class="sender-name">Ponyo</p>
                                         <span class="text-muted date ms-auto">Dec 1</span>
@@ -67,7 +57,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check"> 
-                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                <input type="checkbox" class="form-check-input">
                                     <div class="email-content ms-auto d-flex justify-content-evenly w-90">
                                         <p class="sender-name">Miss Kiki</p>
                                         <span class="text-muted date ms-auto">Nov 30</span>
@@ -77,7 +67,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check"> 
-                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                <input type="checkbox" class="form-check-input">   
                                     <div class="email-content ms-auto d-flex justify-content-evenly w-90">
                                         <p class="sender-name">Studio Ghibli</p>
                                         <span class="text-muted date ms-auto">Nov 30</span>
@@ -87,7 +77,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check"> 
-                                <label class="form-check-label d-flex align-items-center"> <input type="checkbox" class="form-check-input"></label>   
+                                <input type="checkbox" class="form-check-input"> 
                                     <div class="email-content ms-auto d-flex justify-content-evenly w-90">
                                         <p class="sender-name">Mr. No Face</p>
                                         <span class="text-muted date ms-auto">Nov 24</span>
@@ -99,12 +89,12 @@
                 </div>
             </div>
 
-            <div class="col-7 current-email-content">
+            <div class="col-lg-6 col-md-6 d-none d-md-block current-email-content">
                 <div class="row email-header">
-                    <div class="col-2 profile-pic">
-                        <img src="totoro.jpeg" class="rounded-circle profile-pic" alt="totoro profile picture" width="100" height="100">
+                    <div class="col-lg-2 col-md-3 col-sm-4 profile-pic">
+                        <img src="totoro.jpeg" class="rounded-circle img-fluid profile-pic" alt="totoro profile picture">
                     </div>
-                    <div class="col email-header">
+                    <div class="col-lg-9 col-md-5 email-header">
                         <div id="email-title">Email Title</div>
                         <h6>From: Totoro &lt;totoroandfriends@gmail.com&gt; </h6>
                         <p class="text-muted">to: Me</p>
@@ -119,12 +109,16 @@
                 Sed aspernatur facere laboriosam cum illum incidunt. Reprehenderit, qui. 
                 Fuga obcaecati animi voluptas ex distinctio atque quae temporibus autem, aut, veritatis nam.<br><br>
 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sed aspernatur facere laboriosam cum illum incidunt. Reprehenderit, qui. 
+                Fuga obcaecati animi voluptas ex distinctio atque quae temporibus autem, aut, veritatis nam.<br><br>
+
                 Best, <br>
                 Totoro 
                 </p>
                 
                 <div class="row mt-auto d-flex justify-content-end current-email-actions">
-                    <div class="col reply-forward">
+                    <div class="col d-flex">
                         <button class="btn btn-light reply-button">Reply</button>
                         <button class="btn btn-light forward-button">Forward</button>
                     </div>
